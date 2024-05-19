@@ -13,31 +13,30 @@ class RegisterActivity : AppCompatActivity() {
         setContentView(R.layout.activity_register)
 
         val etEmail = findViewById<EditText>(R.id.etEmail)
-        val etNim = findViewById<EditText>(R.id.etNim)
         val etName = findViewById<EditText>(R.id.etName)
-        val etKelas = findViewById<EditText>(R.id.etKelas)
+        val etPassword = findViewById<EditText>(R.id.etPassword)
+        val etClass = findViewById<EditText>(R.id.etKelas)
         val btnRegister = findViewById<Button>(R.id.btnRegister)
 
         btnRegister.setOnClickListener {
             val email = etEmail.text.toString()
-            val nim = etNim.text.toString()
             val name = etName.text.toString()
-            val kelas = etKelas.text.toString()
+            val password = etPassword.text.toString()
+            val kelas = etClass.text.toString()
 
-            // Save user details to SharedPreferences
+            // Simpan informasi pengguna ke SharedPreferences
             val sharedPreferences = getSharedPreferences("user_prefs", Context.MODE_PRIVATE)
             with(sharedPreferences.edit()) {
                 putString("email", email)
-                putString("nim", nim)
                 putString("name", name)
-                putString("kelas", kelas)
+                putString("password", password)
+                putString("class", kelas)
                 apply()
             }
 
-            // Redirect to MainActivity (login screen) after registration
-            val intent = Intent(this, MainActivity::class.java)
+            // Pindah ke halaman profil setelah registrasi
+            val intent = Intent(this, ProfileActivity::class.java)
             startActivity(intent)
-            finish()  // Close the RegisterActivity
         }
     }
 }
