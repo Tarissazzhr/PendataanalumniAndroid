@@ -16,6 +16,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="100dp"
+        android:layout_marginLeft="100dp"/>
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: "
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"
         android:layout_marginLeft="50dp"/>
 
     <TextView
@@ -27,13 +38,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="130dp"
+        android:layout_marginLeft="100dp"/>
+
+    <TextView
+        android:id="@+id/tvNiim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NIM:"
+        app:layout_constraintTop_toBottomOf="@id/tvEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="130dp"
         android:layout_marginLeft="50dp"/>
+
+    <TextView
+        android:id="@+id/tvNamaa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        app:layout_constraintTop_toBottomOf="@id/tvNim"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="100dp"/>
 
     <TextView
         android:id="@+id/tvName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Name"
+        android:text="Nama:"
         app:layout_constraintTop_toBottomOf="@id/tvNim"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,7 +77,18 @@
         android:id="@+id/tvKelas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Class"
+        android:text="Kelas:"
+        app:layout_constraintTop_toBottomOf="@id/tvName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="100dp"/>
+
+    <TextView
+        android:id="@+id/tvKelaas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kelas"
         app:layout_constraintTop_toBottomOf="@id/tvName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -55,7 +99,7 @@
         android:id="@+id/btnLogoutt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="300dp"
         android:layout_centerHorizontal="true"
         android:textColor="@color/black"
         android:backgroundTint="@color/material_dynamic_neutral90"

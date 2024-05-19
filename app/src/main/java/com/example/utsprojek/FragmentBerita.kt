@@ -31,10 +31,34 @@ class FragmentBerita : Fragment() {
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat blandit facilisis. Etiam massa massa, ultrices ac sagittis non, euismod eget erat. Praesent suscipit fringilla sapien, eget dapibus enim tristique dapibus. Sed finibus ipsum ac ante laoreet, vel condimentum ex fermentum.\n" +
                         "\n" +
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat blandit facilisis. Etiam massa massa, ultrices ac sagittis non, euismod eget erat. Praesent suscipit fringilla sapien, eget dapibus enim tristique dapibus. Sed finibus ipsum ac ante laoreet, vel condimentum ex fermentum.", "https://example.com/image1.jpg"),
-            DataBerita("PNJ KEMBALI MENDAPATKAN OPINI WAJAR", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat blandit facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat blandit facilisis.",
-                "Deskripsi Berita 1 untuk DetailActivity", "https://example.com/image1.jpg"),
-            // Tambahkan item berita lainnya di sini
-        )
+            DataBerita("PERWAKILAN TIK PNJ RAIH JUARA TERBAIK I PILMAPRES TINGKAT LLDIKTI WILAYAH III PROGRAM DIPLOMA", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat blandit facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat blandit facilisis.",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "https://upload.wikimedia.org/wikipedia/id/1/16/Logo_Politeknik_Negeri_Jakarta.jpg"),
+
+            DataBerita("Visitasi Delegasi China ke Politeknik Negeri Jakarta", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat blandit facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat blandit facilisis.",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "https://upload.wikimedia.org/wikipedia/id/1/16/Logo_Politeknik_Negeri_Jakarta.jpg"),
+
+            DataBerita("Sivitas Akademika PNJ Gelar Upacara Peringatan Hari Pendidikan Nasional 2024", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat blandit facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat blandit facilisis.",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "https://upload.wikimedia.org/wikipedia/id/1/16/Logo_Politeknik_Negeri_Jakarta.jpg"),
+
+            DataBerita("Pendaftaran MSIB Kampus Merdeka", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat blandit facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat blandit facilisis.",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "https://upload.wikimedia.org/wikipedia/id/1/16/Logo_Politeknik_Negeri_Jakarta.jpg"),
+
+            DataBerita("TI4B?? Sini Intip Biodata Mahasiswa kelas TI-4B", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat blandit facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat blandit facilisis.",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "https://upload.wikimedia.org/wikipedia/id/1/16/Logo_Politeknik_Negeri_Jakarta.jpg"),
+
+            DataBerita("PNJ punya Bipol Baru, hadiah dari Mandiri", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat blandit facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat blandit facilisis.",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "https://upload.wikimedia.org/wikipedia/id/1/16/Logo_Politeknik_Negeri_Jakarta.jpg"),
+
+            DataBerita("Ikuti Dialog Jurusan 2024", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat blandit facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat blandit facilisis.",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "https://upload.wikimedia.org/wikipedia/id/1/16/Logo_Politeknik_Negeri_Jakarta.jpg"),
+
+            DataBerita("Aturan Kompensasi Mahasiswa", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat blandit facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat blandit facilisis.",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "https://upload.wikimedia.org/wikipedia/id/1/16/Logo_Politeknik_Negeri_Jakarta.jpg"),
+
+            DataBerita("Jadwal Akademik Mahasiswa 2024/2025", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat blandit facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat blandit facilisis.",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "https://upload.wikimedia.org/wikipedia/id/1/16/Logo_Politeknik_Negeri_Jakarta.jpg"),
+
+            )
 
         adapter = AdapterBerita(requireContext(), R.layout.itemberita, beritaList)
         listView.adapter = adapter
