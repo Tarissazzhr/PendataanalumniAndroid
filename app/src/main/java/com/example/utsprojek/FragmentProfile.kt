@@ -38,12 +38,12 @@ class FragmentProfile : Fragment(R.layout.fragmentprofile) {
         val btnLogout = view.findViewById<Button>(R.id.btnLogoutt)
         btnLogout.setOnClickListener {
             // Clear SharedPreferences (logout)
-            sharedPreferences.edit().clear().apply()
+            sharedPreferences?.edit()?.clear()?.apply()
 
             // Start MainActivity (login screen)
             val intent = Intent(requireContext(), MainActivity::class.java)
             startActivity(intent)
-            requireActivity().finish() // Close ProfileActivity if needed
+            requireActivity().finish() // Close the current activity
         }
 
         return view
