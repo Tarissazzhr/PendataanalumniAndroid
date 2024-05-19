@@ -16,35 +16,32 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
+        val btnLogin = findViewById<Button>(R.id.buttonLogin)
         val etEmail = findViewById<EditText>(R.id.etEmail)
         val etPassword = findViewById<EditText>(R.id.etPassword)
-        val btnLogin = findViewById<Button>(R.id.buttonLogin)
-
-        // Dummy email and password for demonstration
-        val validEmail = "user@example.com"
-        val validPassword = "1234"
 
         btnLogin.setOnClickListener {
             val email = etEmail.text.toString()
             val password = etPassword.text.toString()
 
-            // Validating email and password
-            if (email == validEmail && password == validPassword) {
-                // Save email to SharedPreferences
-                val sharedPreferences = getSharedPreferences("user_prefs", Context.MODE_PRIVATE)
-                with(sharedPreferences.edit()) {
-                    putString("email", email)
-                    apply()
-                }
+            // Assuming these values are fetched from a form or other input
+            val nim = "2207411037"
+            val name = "Tariss Azzahra Danantya"
+            val kelas = "TI-4B"
 
-                // Start HomeActivity after successful login
-                val intent = Intent(this, HomeActivity::class.java)
-                startActivity(intent)
-                finish() // Close MainActivity
-            } else {
-                // Show error message for invalid credentials
-                Toast.makeText(this, "Invalid email or password", Toast.LENGTH_SHORT).show()
+            // Save to SharedPreferences
+            val sharedPreferences = getSharedPreferences("user_prefs", Context.MODE_PRIVATE)
+            with(sharedPreferences.edit()) {
+                putString("email", email)
+                putString("nim", nim)
+                putString("name", name)
+                putString("kelas", kelas)
+                apply()
             }
+
+            // Start ProfileActivity (you can change this to your desired activity)
+            val intent = Intent(this, FragmentProfile::class.java)
+            startActivity(intent)
         }
 
         // Handle click on register TextView
