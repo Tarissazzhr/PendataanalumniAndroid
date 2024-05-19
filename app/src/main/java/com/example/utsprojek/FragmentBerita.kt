@@ -27,7 +27,7 @@ class FragmentBerita : Fragment() {
 
         listView = view.findViewById(R.id.listView)
         val beritaList = listOf(
-            DataBerita("300 Juta Data Dukcapil Diduga Bocor, Kominfo Lakukan Prosedur Standar", "Kementerian Komunikasi dan Informatika (Kominfo) menyebut pihaknya akan melakukan prosedur standar untuk menelusuri dugaan kebocoran data Kependudukan dan Pencatatan Sipil (Dukcapil).",
+            DataBerita("PNJ KEMBALI MENDAPATKAN OPINI WAJAR TANPA PENGECUALIAN PADA LHP AUDIT KAP PADA LK 2023", "Kementerian Komunikasi dan Informatika (Kominfo) menyebut pihaknya akan melakukan prosedur standar untuk menelusuri dugaan kebocoran data Kependudukan dan Pencatatan Sipil (Dukcapil).",
                 "Sebelumnya, sebanyak 337 juta data masyarakat di Direktorat Dukcapil Kementerian Dalam Negeri (Kemendagri) diduga mengalami kebocoran dan dijual di forum online hacker BreachForums.\n" +
                         "\n" +
                         "Kebocoran itu diungkap Teguh Aprianto, pendiri Ethical Hacker Indonesia, di media sosial pada Minggu (16/7). Teguh menjelaskan data yang dipastikan bocor adalah nama, Nomor Induk Kependudukan (NIK), nomor Kartu Keluarga (KK), tanggal lahir, alamat, nama ayah, nama ibu, NIK ibu, nomor akta lahir, nomor akta nikah dan lainnya.", "https://example.com/image1.jpg"),
