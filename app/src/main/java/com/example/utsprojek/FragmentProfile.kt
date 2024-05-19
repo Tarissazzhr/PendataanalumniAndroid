@@ -1,10 +1,12 @@
 package com.example.utsprojek
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 
@@ -32,6 +34,17 @@ class FragmentProfile : Fragment(R.layout.fragmentprofile) {
         view.findViewById<TextView>(R.id.tvNim).text = "NIM: $userNim"
         view.findViewById<TextView>(R.id.tvName).text = "Name: $userName"
         view.findViewById<TextView>(R.id.tvKelas).text = "Class: $userKelas"
+
+        val btnLogout = view.findViewById<Button>(R.id.btnLogoutt)
+        btnLogout.setOnClickListener {
+            // Clear SharedPreferences (logout)
+            sharedPreferences.edit().clear().apply()
+
+            // Start MainActivity (login screen)
+            val intent = Intent(requireContext(), MainActivity::class.java)
+            startActivity(intent)
+            requireActivity().finish() // Close ProfileActivity if needed
+        }
 
         return view
     }
